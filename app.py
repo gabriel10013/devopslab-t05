@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def pagina_inicial():
-    today = ("Good Morning, today is" date.today())
+    today = "Good Morning, today is" date.today())
     return today
 
 if __name__ == '__main__':
