@@ -1,4 +1,5 @@
 from flask import Flask
+from datetime import date
 from flask_wtf.csrf import CSRFProtect
 
 app = Flask(__name__)
@@ -7,7 +8,8 @@ csrf = CSRFProtect(app)
 
 @app.route("/")
 def pagina_inicial():
-    return "Laboratório Pipeline DevOps"
+    today = "Good Morning, today is" + str(date.today())
+    return today
 
 @app.route('/bug')                                                                                                                                
 def bad():                                                                                                                                        
