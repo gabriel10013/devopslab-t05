@@ -2,7 +2,6 @@
 from app import app
 import unittest
 from datetime import date
-from flask_wtf.csrf import CSRFProtect
 
 class Test(unittest.TestCase):
     def setUp(self):
